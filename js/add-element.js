@@ -35,11 +35,12 @@ function addElement() {
         $(this).parent().addClass("cool");
 
         // bind click with new li element 
-               $(this).parent().addClass("cool");
+          $(this).parent().addClass("cool");
 
         //remove input element and replace with the value user typed
          var userinput = $(this).val();
         $(this).parent().text(userinput);
+        $("li").click(changeStyle);
       });
 }
 
